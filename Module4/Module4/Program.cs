@@ -12,10 +12,12 @@ namespace Module4
 
             string[] names = CreateArrayOfPeople(response);
 
-            string cleaned = CleanUpArray(names);
-           
+            //string cleaned = CleanUpArray(names); Här tog jag bort din cleaned och skickar med 'names' istället
+            CleanUpArray(names);
 
-            ViewToUser(cleaned);
+
+            //ViewToUser(cleaned); Samma här
+            ViewToUser(names);
 
 
             Console.WriteLine();
@@ -28,9 +30,9 @@ namespace Module4
             foreach (var element in list)
             {
                 var cleanedElement = element.Trim();
-                x.Add(cleanedElement)
+                x.Add(cleanedElement); //Här hade du glömt semikolon 
             }
-            return x.ToArray();
+            return x.ToString();
         }
 
         private static string InputFromUser()
@@ -85,6 +87,7 @@ namespace Module4
             }
             Console.WriteLine();
             Console.ResetColor();
+            }
         }
     }
 }
