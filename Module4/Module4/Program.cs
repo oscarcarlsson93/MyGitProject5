@@ -66,7 +66,6 @@ namespace Module4
 
 
 
-
         private static void FirstSolution()
         {
 
@@ -89,5 +88,5 @@ namespace Module4
             Console.ResetColor();
             }
         }
-    }
+    
 }
